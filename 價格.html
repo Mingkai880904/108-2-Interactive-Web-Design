@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+</head>
+<script type="text/javascript">
+function test(){
+var a1 = document.getElementById('T1').value;
+var a2 = document.getElementById('T2').value;
+//var b1 = parseInt(a1);
+var a3 = a1* a2;
+document.getElementById('T3').innerHTML = a3;
+if(a2<=0|a1<=0){
+	document.getElementById('T3').innerHTML = "error";
+	}
+	else{
+		document.getElementById('T3').innerHTML = a3;
+	}
+//alert(a3);
+
+/*var b1 =parseInt(a1);
+b1 = b1 * 5;
+alert(b1);*/
+	
+}
+</script>
+
+
+<body>
+單價:<input type="text" id="T1" value="0" size"5"><br>
+數量:<input type="text" id="T2" value="0" size"5"><br>
+小計:<div id ="T3">0</div>
+<input type="button" id ="B1" value= "檢查" onClick="test()">
+</body>
+</html>

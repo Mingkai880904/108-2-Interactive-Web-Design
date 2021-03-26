@@ -1,0 +1,49 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>4070E022 沈明楷</title>
+</head>
+
+<style type="text/css">
+.c01{
+	animation:blText1 4s infinite
+
+	}
+.c02{
+	animation:blText2 1s infinite
+	}	
+@keyframes blText1{
+	0%{  color:#000;}
+	10%{  color:transparent;}
+	100%{  color:blue;}
+	
+}
+@keyframes blText2{
+	0%{  color:#000;}
+	10%{  color:transparent;}
+	100%{  color:red;}
+	
+}	
+</style>
+
+<script type="application/javascript">	
+
+function showRED(){
+    document.getElementById("T01").className = "c01";
+}
+
+function chgCSS(){
+    document.getElementById("T01").className = "c02";
+}
+</script>
+
+<body>
+<button onclick="showRED()">長</button>
+<button onclick="chgCSS()">短</button>
+<div id="T01">hello 你好</div>
+</body>
+
+</html>

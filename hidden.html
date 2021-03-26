@@ -1,0 +1,43 @@
+   <!DOCTYPE html>
+<html>
+      
+      <head>
+              <meta charset="utf-8">
+              
+              <title>4070E057</title>
+              <meta name="description" content="An interactive getting started guide for Brackets.">
+              <link rel="stylesheet" href="main.css">
+      </head>
+      <script type="text/javascript">
+              function test(){
+                      var a1 = document.getElementById('T1').value;
+                      var a2 = document.getElementById('T2').value;
+                      if(isNaN(a2)||isNaN(a1))
+                              {
+                                    document.getElementById('T3').innerHTML = "INVALID"; 
+
+                              }
+                      else if(a2<=0||a1<=0)
+                              {
+                                    document.getElementById('T3').innerHTML = "error"; 
+                              }
+                      else
+                              {
+                                      //var b1 = parseInt(a1);
+                                      var a3=a1*a2;
+                                      document.getElementById('T3').innerHTML = a3;
+                                }
+                      //alert(a3);
+                      document.getElementById('B1').style.visibility= 'hidden'; //visible //按鈕隱藏
+                      document.getElementById('T1').style.pointerEvents= 'none';   //欄位無法變更
+                      document.getElementById('T2').style.pointerEvents= 'none';   //欄位無法變更
+              }
+      </script>
+      <body>
+              價格:<input type="text" id="T1" value="0" size="5"><br>
+              數量:<input type="text" id="T2" value="0" size="5"><br>
+              小計:<div id="T3" ></div>
+              <input type="button" id="B1" value="檢查" onClick="test()">
+              
+      </body>
+</html>
